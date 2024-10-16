@@ -7,6 +7,7 @@
    <meta name="description" content="Streamlab - Video Streaming HTML5 Template" />
    <meta name="author" content="StreamLab" />
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Dynamic Title -->
    <title><?php bloginfo('name'); ?> - <?php wp_title(); ?></title>
    <!-- Favicon -->
 <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" sizes="16x16" />
@@ -16,11 +17,12 @@
 <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" sizes="180x180" />
 <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" sizes="512x512" />
    <!-- CSS bootstrap-->
-   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
    <!--  Style -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>"> 
    <!--  Responsive -->
-   <link rel="stylesheet" href="css/responsive.css" />
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
+   <?php wp_head(); ?> <!-- Important WordPress hook -->
 </head>
 
 <body>
