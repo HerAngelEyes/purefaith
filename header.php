@@ -37,7 +37,16 @@
 
    <!--========== Header ==============-->
    <header id="gen-header" class="gen-header-style-1 gen-has-sticky">
+   <h1><?php bloginfo('name'); ?></h1> <!-- Site Title -->
       <div class="gen-bottom-header">
+       <!-- Navigation Menu -->
+    <?php
+    wp_nav_menu(array(
+        'theme_location' => 'primary', // The location you registered in functions.php
+        'container' => 'nav',          // The HTML element to wrap the menu
+        'container_class' => 'primary-menu', // Optional: Add a custom class for styling
+    ));
+    ?>
          <div class="container">
             <div class="row">
                <div class="col-lg-12">
