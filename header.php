@@ -9,7 +9,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title><?php bloginfo('name'); ?> - <?php wp_title(); ?></title>
    <!-- Favicon -->
-   <link rel="shortcut icon" href="images/favicon.png">
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" sizes="16x16" />
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" sizes="32x32" />
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" sizes="48x48" />
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" sizes="180x180" />
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" sizes="512x512" />
    <!-- CSS bootstrap-->
    <link rel="stylesheet" href="css/bootstrap.min.css" />
    <!--  Style -->
