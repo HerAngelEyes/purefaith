@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>> <!-- HTML tag with language attributes -->
 
 <head>
-   <meta charset="utf-8">
+   <meta charset="<?php bloginfo('charset'); ?>"> <!-- Character encoding -->
    <meta name="keywords" content="Streamlab - Video Streaming HTML5 Template" />
    <meta name="description" content="Streamlab - Video Streaming HTML5 Template" />
    <meta name="author" content="StreamLab" />
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>Streamlab - Video Streaming HTML5 Template</title>
-   <!-- Favicon -->
+<title><?php wp_title(); ?></title> <!-- Dynamic title -->
+<?php wp_head(); ?> <!-- This function allows WordPress to enqueue scripts/styles in the <head> -->
+<!-- Favicon -->
    <link rel="shortcut icon" href="images/favicon.png">
    <!-- CSS bootstrap-->
    <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -19,6 +20,7 @@
 </head>
 
 <body>
+<body <?php body_class(); ?>> <!-- Body tag with dynamic classes -->
 
    <!--=========== Loader =============-->
    <div id="gen-loading">
@@ -29,6 +31,7 @@
    <!--=========== Loader =============-->
 
    <!--========== Header ==============-->
+<?php get_header(); // This includes the header.php file ?>
    <header id="gen-header" class="gen-header-style-1 gen-has-sticky">
       <div class="gen-bottom-header">
          <div class="container">
