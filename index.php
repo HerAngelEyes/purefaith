@@ -18,9 +18,8 @@
    <!--  Responsive -->
    <link rel="stylesheet" href="css/responsive.css" />
 </head>
-
-<body>
 <body <?php body_class(); ?>> <!-- Body tag with dynamic classes -->
+
 
    <!--=========== Loader =============-->
    <div id="gen-loading">
@@ -35,6 +34,25 @@
    <header id="gen-header" class="gen-header-style-1 gen-has-sticky">
       <div class="gen-bottom-header">
          <div class="container">
+
+ <main>
+        <?php
+        if (have_posts()) : // Check if there are any posts
+            while (have_posts()) : the_post(); // Start the loop
+                ?>
+                <article>
+                    <h2><?php the_title(); ?></h2> <!-- Display the post title -->
+                    <div><?php the_excerpt(); ?></div> <!-- Display a short excerpt of the post -->
+                    <a href="<?php the_permalink(); ?>">Read More</a> <!-- Link to the full post -->
+                </article>
+                <?php
+            endwhile; // End the loop
+        else :
+            ?>
+            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p> <!-- Message when no posts are found -->
+        <?php
+        endif;
+        ?>
             <div class="row">
                <div class="col-lg-12">
                   <nav class="navbar navbar-expand-lg navbar-light">
@@ -3247,6 +3265,7 @@
    <!-- owl-carousel Videos Section-4 End -->
 
    <!-- footer start -->
+   <?php get_footer(); // This includes the footer.php file ?>
    <footer id="gen-footer">
       <div class="gen-footer-style-1">
          <div class="gen-footer-top">
