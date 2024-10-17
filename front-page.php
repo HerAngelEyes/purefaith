@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Home Page
+*/
+?>
 <?php get_header(); // Include the header ?>
 
 <div class="container">
