@@ -1804,6 +1804,42 @@ Banner 3
         line-height: 38px;
     }
 }
+/*=========================================
+Container
+===========================================*/
+
+.container {
+    max-width: 1710px;
+}
+
+@media (max-width: 1699px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.container-2 {
+    max-width: 1300px;
+}
+
+
+/*======Border=======*/
+
+.gen-top-border {
+    border-top: 1px solid #141B29;
+}
 
     
 </div>
