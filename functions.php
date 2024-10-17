@@ -11,7 +11,7 @@ function register_my_menus() {
 add_action('init', 'register_my_menus');
 function enqueue_slick() {
     // Enqueue Slick Carousel CSS
-    wp_enqueue_style('slick-css', get_template_directory_uri() . '/path/to/slick.css');
+    wp_enqueue_style('slick-css', get_template_directory_uri() . '/path/to/slick.min.css');
     wp_enqueue_style('slick-theme-css', get_template_directory_uri() . '/path/to/slick-theme.css');
 
     // Enqueue jQuery (if not already included)
