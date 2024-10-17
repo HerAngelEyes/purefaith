@@ -1840,6 +1840,130 @@ Container
 .gen-top-border {
     border-top: 1px solid #141B29;
 }
+Button Core
+================================================*/
+input[type="button"],
+[type="reset"],
+[type="submit"] {
+    padding: 12px 30px;
+    font-family: var(--title-fonts);
+    font-size: 16px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-transform: capitalize;
+    color: var(--white-color) !important;
+    display: inline-block;
+    border: none;
+    width: auto;
+    height: auto;
+    line-height: 2;
+    text-transform: uppercase;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+[type="button"]:hover,
+[type="reset"]:hover,
+[type="submit"]:hover {
+    color: var(--white-color) !important;
+}
+
+.gen-button {
+    text-transform: uppercase;
+    position: relative;
+    width: auto;
+    font-weight: 400;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-family: var(--title-fonts);
+    font-size: 16px;
+    padding: 12px 30px;
+    line-height: 2;
+    vertical-align: middle;
+    border: none;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.gen-button-flat {
+    padding: 5px 30px;
+}
+
+.gen-button span {
+    z-index: 9;
+    position: relative;
+}
+
+.gen-button i {
+    margin-right: 10px;
+}
+
+.gen-button:hover,
+.gen-button:focus {
+    color: var(--white-color);
+    background: var(--primarydark-color);
+}
+
+/*===== Button link =====*/
+.gen-button.gen-button-link {
+    padding: 0;
+    background: transparent;
+    color: var(--white-color);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.gen-button.gen-button-link:hover {
+    color: var(--white-color);
+}
+
+.gen-button.gen-button-link i {
+    margin-right: 10px;
+    height: 56px;
+    width: 56px;
+    display: inline-block;
+    line-height: 56px;
+    background: var(--white-color);
+    color: var(--primary-color);
+    text-align: center;
+    -webkit-border-radius: 900px;
+    -moz-border-radius: 900px;
+    border-radius: 900px;
+    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.gen-button.gen-button-link:hover i {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/*===== Button outline =====*/
+.gen-button.gen-button-outline {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.gen-button.gen-button-outline:hover {
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color)
+}
 
     
 </div>
