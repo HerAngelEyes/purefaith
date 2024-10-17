@@ -3795,7 +3795,313 @@ Movies Single
         margin: 15px 0 0 0;
     }
 }
+/*================================================
+Footer
+================================================*/
 
+footer#gen-footer {
+    background: var(--black-color);
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+footer#gen-footer .gen-footer-top {
+    padding: 60px 0 0;
+}
+
+footer#gen-footer .gen-copyright-footer {
+    padding: 15px 0;
+    background: var(--primary-color);
+}
+
+footer#gen-footer .gen-copyright-footer .gen-copyright {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+footer#gen-footer .gen-copyright-footer .gen-copyright a {
+    color: var(--white-color);
+}
+
+footer#gen-footer .gen-copyright-footer .gen-copyright a:hover {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+/*===== Footer Widget =====*/
+footer#gen-footer .widget {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 45px;
+}
+
+footer#gen-footer .widget .footer-title {
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 26px;
+    position: relative;
+    line-height: 34px;
+}
+
+footer#gen-footer .widget ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer#gen-footer .widget ul li a {
+    padding: 0;
+}
+
+footer#gen-footer .widget ul li a:hover {
+    color: var(--primary-color);
+}
+
+footer#gen-footer table td,
+footer#gen-footer table th {
+    border: 1px solid #222d42;
+}
+
+footer#gen-footer .calendar_wrap table caption {
+    caption-side: inherit;
+    padding: 0 0 10px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+footer#gen-footer .calendar_wrap td#today {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+footer#gen-footer .calendar_wrap td#today a {
+    color: var(--white-color);
+}
+
+footer#gen-footer ul li a.rsswidget {
+    padding-left: 0;
+    font-size: 16px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-family: var(--title-fonts);
+}
+
+footer#gen-footer ul li .rss-date {
+    font-size: 14px;
+    color: var(--primary-color);
+    line-height: 1;
+    float: left;
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+footer#gen-footer ul li cite {
+    font-weight: 600;
+    margin-top: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+footer#gen-footer .search-form {
+    position: relative;
+}
+
+footer#gen-footer .search-form .search-submit {
+    background: var(--primary-color);
+    border: none;
+    position: absolute;
+    text-align: center;
+    line-height: 54px;
+    height: 54px;
+    width: 54px;
+    top: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+footer#gen-footer .search-form .search-submit:before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #ffffff;
+}
+
+footer#gen-footer .search-form .search-submit:hover {
+    background: var(--dark-color);
+}
+
+footer#gen-footer .search-form input {
+    background: var(--white-color);
+    border-color: var(--white-color);
+    color: var(--secondary-color);
+}
+
+footer#gen-footer .tagcloud .tag-cloud-link {
+    font-size: 14px !important;
+    color: var(--white-color);
+    background: var(--dark-color);
+    margin: 0 10px 10px 0;
+    display: inline-block;
+    float: left;
+    padding: 2px 12px;
+    border-radius: 0;
+    border: 1px solid var(--dark-color);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+footer#gen-footer .tagcloud .tag-cloud-link:hover {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+footer#gen-footer .widget ul.menu li a,
+footer#gen-footer .gen-widget-menu .gen-service li a {
+    position: relative;
+    border: none;
+    padding: 5px 0 5px 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+footer#gen-footer .widget ul.menu li a:hover,
+footer#gen-footer .gen-widget-menu .gen-service li a:hover {
+    color: var(--primary-color);
+}
+
+footer#gen-footer .widget ul.menu li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: var(--primary-color);
+    margin: auto 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+footer#gen-footer .wp-calendar-nav .wp-calendar-nav-prev,
+footer#gen-footer .wp-calendar-nav .wp-calendar-nav-next {
+    background: transparent;
+}
+
+footer#gen-footer .wp-caption p.wp-caption-text {
+    color: var(--secondary-color);
+}
+
+footer#gen-footer .gen-widget-menu .gen-service li a:before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: var(--primary-color);
+    margin: 0;
+}
+
+footer#gen-footer .widget #recentcomments--1 li.recentcomments span a {
+    color: var(--primary-color);
+}
+
+/*=========*/
+footer#gen-footer .gen-footer-style-1 .widget .footer-title,
+footer#gen-footer .gen-footer-style-1 .widget ul.menu li a,
+footer#gen-footer .gen-footer-style-1 .gen-widget-menu .gen-service li a,
+footer#gen-footer .gen-footer-style-1 .widget ul li a {
+    color: var(--white-color);
+}
+
+footer#gen-footer .gen-footer-style-1 .widget ul li a:hover {
+    color: var(--primary-color);
+}
+
+footer#gen-footer .gen-footer-style-1 .gen-copyright-footer {
+    background: var(--primary-color);
+}
+
+#gen-footer .gen-footer-style-1 .widget:first-child {
+    margin-bottom: 45px;
+}
+
+#gen-footer .gen-footer-style-1 .gen-footer-logo {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+footer#gen-footer .gen-footer-style-1 .widget ul.menu li {
+    margin-bottom: 0;
+    width: calc(50% - 2px);
+    display: inline-block;
+}
+
+#gen-footer .social-link {
+    margin: 0;
+    padding: 0;
+}
+
+#gen-footer .social-link li {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}
+
+#gen-footer .social-link li:last-child {
+    margin-right: 0;
+}
+
+#gen-footer .social-link li a {
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    display: inline-block;
+    margin-right: 0 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+#gen-footer .social-link li a:last-child {
+    margin-right: 0px;
+}
+
+#gen-footer .social-link li a:hover {
+    color: var(--primary-color);
+}
+
+.gen-playstore-logo {
+    height: 45px;
+    display: inline-block;
+    float: left;
+}
+
+.gen-appstore-logo {
+    height: 45px;
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+}
 
 </div>
 
