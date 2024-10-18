@@ -24,3 +24,7 @@ function enqueue_slick() {
     wp_enqueue_script('custom-slick-init', get_template_directory_uri() . '/path/to/custom-slick-init.js', array('slick-js'), null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_slick');
+function add_theme_support_for_page_attributes() {
+    add_post_type_support('page', 'page-attributes');
+}
+add_action('init', 'add_theme_support_for_page_attributes');
